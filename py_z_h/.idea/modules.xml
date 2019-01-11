@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Desktop/api/.idea/api.iml" filepath="$USER_HOME$/Desktop/api/.idea/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dj_cbv/.idea/dj_cbv.iml" filepath="$PROJECT_DIR$/../dj_cbv/.idea/dj_cbv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dj_forms/.idea/dj_forms.iml" filepath="$PROJECT_DIR$/../dj_forms/.idea/dj_forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dj_models/.idea/dj_models.iml" filepath="$PROJECT_DIR$/../dj_models/.idea/dj_models.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/tmp/my_test/.idea/my_test.iml" filepath="$USER_HOME$/Desktop/tmp/my_test/.idea/my_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/py_z_h.iml" filepath="$PROJECT_DIR$/.idea/py_z_h.iml" />
+    </modules>
+  </component>
+</project>

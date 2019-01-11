@@ -1,0 +1,5 @@
+ambulatory, aquatic
+order by artist, name collate nocase
+_ matches any character
+if stats
+select count(distinct *)

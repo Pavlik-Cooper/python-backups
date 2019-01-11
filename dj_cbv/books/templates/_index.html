@@ -1,0 +1,34 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="row">
+    <h2 class="text-center">All books {% if publisher %}  by {{  publisher }} {% endif %}</h2>
+</div>
+
+<div class="row">
+
+{% if books %}
+
+    {% for book in books %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{{ book.get_absolute_url }}">{{ book }}</a></h5>
+                    <p class="card-text">{{ book.description }}</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+        </div>
+        </div>
+
+    {% endfor %}
+
+{% endif %}
+
+{% endblock %}
+
+</div>

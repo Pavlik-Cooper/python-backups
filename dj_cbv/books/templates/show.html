@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="col">
+
+<h3><a href="{{ object.get_absolute_url }}update">{{ object }}</a></h3>
+<p>{{ object.description }}</p>
+<form action="{{ object.get_absolute_url }}delete/" method="post">
+    {% csrf_token %}
+    <button>Confirm</button>
+</form>
+
+
+</div>
+
+<div class="col">
+{% include 'form.html' with button_title=button_title %}
+</div>
+
+
+
+{% endblock %}
