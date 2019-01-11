@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ block.super}} templates
+{% endblock %}
+{% block content %}
+
+        {%  for post in posts %}
+
+            <div {% if forloop %} style="font-weight: bold" {% endif %}>
+
+                <p class='{% cycle "" "active" %}'>
+                {% if forloop.counter|divisibleby:2  %}
+                     {{ post|upper }}
+                {% else %}
+                    {{ post|lower }}
+                {% endif %}
+                </p>
+
+                <time>{{ post.created_at|date:"D d M Y f a"  }}</time>
+            </div>
+
+        {% endfor %}
+{% endblock %}
